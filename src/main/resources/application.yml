@@ -1,14 +1,14 @@
 server:
-  port: ${APPLICATION_PORT:8088}
+  port: 8088
   servlet:
     session:
       cookie:
         same-site: lax
 spring:
   datasource:
-    url:  ${DATABASE_URL:jdbc:postgresql://localhost:5432/jwt}
-    username: ${BE_DB_USER:jwt}
-    password: ${BE_DB_PASS:jwt}
+    url:  jdbc:postgresql://localhost:5432/jwt
+    username: jwt
+    password: jwt
   flyway:
     enabled: true
   jpa:
